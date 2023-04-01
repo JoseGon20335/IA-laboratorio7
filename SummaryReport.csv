@@ -1,0 +1,7 @@
+,Data Type,Unique Values,Missing Values
+CustomerDOB,int64,47,0
+CustGender,int64,2,0
+CustAccountBalance,float64,63881,0
+TransactionDate,int64,21,0
+TransactionTime,float64,24,0
+TransactionAmount (INR),float64,77502,0
