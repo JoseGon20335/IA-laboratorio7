@@ -8,7 +8,7 @@ from sklearn.pipeline import Pipeline
 
 
 def mainLibraries():
-    data = pd.read_csv('clean.csv')
+    data = pd.read_csv('cleanData.csv')
 
     scaler = StandardScaler()
     dataScale = scaler.fit_transform(data)

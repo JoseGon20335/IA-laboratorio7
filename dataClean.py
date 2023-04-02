@@ -18,11 +18,7 @@ def dataClean():
     data = data[data['CustGender'] != 'T']
     data['CustGender'] = data['CustGender'].map({'F': 0, 'M': 1})
     data = data.drop(columns=['CustLocation', 'TransactionID', 'CustomerID'])
-    data.to_csv('clean.csv', index=False)
-    result = pd.concat([data.dtypes, data.nunique(),
-                       data.isnull().sum()], axis=1)
-    result.columns = ['Data Type', 'Unique Values', 'Missing Values']
-    result.to_csv('SummaryReport.csv')
+    data.to_csv('cleanData.csv', index=False)
 
 
 dataClean()
